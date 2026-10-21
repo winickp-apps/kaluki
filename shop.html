@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — KALUKI</title>
+  <meta name="description" content="Shop the full KALUKI bag collection. The Mini from £59. The Large from £89. Eight colourways. Gold hardware. Lucky elephant charm." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg class="nav-logo-mark" viewBox="0 0 48 48" fill="none">
+          <ellipse cx="24" cy="30" rx="14" ry="10" stroke="#C8A86B" stroke-width="1.5" fill="none"/>
+          <path d="M16 28 C14 22 15 14 22 12 C20 18 24 22 24 22" stroke="#C8A86B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <circle cx="31" cy="17" r="2.5" stroke="#C8A86B" stroke-width="1.2" fill="none"/>
+          <path d="M31 22 C34 18 38 18 38 22 C38 26 35 28 32 27" stroke="#C8A86B" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="nav-logo-text">KALUKI</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="shop.html" style="color:var(--gold)">Shop</a></li>
+        <li><a href="index.html#collection">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="shop.html" class="nav-bag" data-bag>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span>Bag</span>
+        </a>
+        <button class="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-mobile">
+    <button class="nav-mobile-close" aria-label="Close menu" style="position:absolute;top:2rem;right:2rem;font-size:1.5rem;color:var(--charcoal);">✕</button>
+    <a href="shop.html">Shop</a>
+    <a href="index.html#collection">Collection</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <p class="eyebrow">The Full Edit</p>
+    <h1>Shop</h1>
+    <p>The signature KALUKI drawstring bag in two sizes, eight colourways and five chain styles. Find yours.</p>
+  </div>
+
+  <!-- Shop Filters + Grid -->
+  <section class="section" style="background:var(--white)">
+    <div class="section-max">
+
+      <div class="shop-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mini">The Mini — £59</button>
+        <button class="filter-btn" data-filter="large">The Large — £89</button>
+        <button class="filter-btn" data-filter="collection">Lucky Elephant</button>
+      </div>
+
+      <div class="shop-grid">
+
+        <!-- Cream & Gold Mini -->
+        <div class="product-card reveal" data-category="mini collection">
+          <div class="product-card-image">
+            <img src="assets/images/kaluki1.jpeg" alt="KALUKI Mini — Cream & Gold" loading="lazy" style="object-position:0% 0%" />
+            <span class="product-card-badge">Bestseller</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-meta">
+              <span class="product-card-name">The Mini</span>
+              <span class="product-card-price">£59</span>
+            </div>
+            <span class="product-card-sub">Cream &amp; Gold · Woven</span>
+            <div class="product-card-colours">
+              <div class="product-card-colour-dot c-cream-gold" title="Cream & Gold"></div>
+              <div class="product-card-colour-dot c-baby-pink" title="Baby Pink"></div>
+              <div class="product-card-colour-dot c-baby-blue" title="Baby Blue"></div>
+              <div class="product-card-colour-dot c-emerald" title="Emerald"></div>
+            </div>
+            <div class="product-card-footer">
+              <button class="add-to-bag">Add to Bag</button>
+              <div style="font-size:0.7rem;color:var(--gold);letter-spacing:0.05em">🐘 Lucky Charm</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Baby Pink Mini -->
+        <div class="product-card reveal delay-1" data-category="mini collection">
+          <div class="product-card-image">
+            <img src="assets/images/kaluki4.jpeg" alt="KALUKI Mini — Baby Pink" loading="lazy" style="object-position: 30% 30%;" />
+            <span class="product-card-badge">New</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-meta">
+              <span class="product-card-name">The Mini</span>
+              <span class="product-card-price">£59</span>
+            </div>
+            <span class="product-card-sub">Baby Pink · Fluffy</span>
+            <div class="product-card-colours">
+              <div class="product-card-colour-dot c-baby-pink" title="Baby Pink"></div>
+              <div class="product-card-colour-dot c-cream-fluffy" title="Cream Fluffy"></div>
+              <div class="product-card-colour-dot c-black" title="Black"></div>
+            </div>
+            <div class="product-card-footer">
+              <button class="add-to-bag">Add to Bag</button>
+              <div style="font-size:0.7rem;color:var(--gold);letter-spacing:0.05em">🐘 Lucky Charm</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Baby Blue Mini -->
+        <div class="product-card reveal delay-2" data-category="mini collection">
+          <div class="product-card-image">
+            <img src="assets/images/kaluki4.jpeg" alt="KALUKI Mini — Baby Blue" loading="lazy" style="object-position: 70% 30%;" />
+            <span class="product-card-badge">New</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-meta">
+              <span class="product-card-name">The Mini</span>
+              <span class="product-card-price">£59</span>
+            </div>
+            <span class="product-card-sub">Baby Blue · Woven</span>
+            <div class="product-card-colours">
+              <div class="product-card-colour-dot c-baby-blue" title="Baby Blue"></div>
+              <div class="product-card-colour-dot c-cream-gold" title="Cream & Gold"></div>
+            </div>
+            <div class="product-card-footer">
+              <button class="add-to-bag">Add to Bag</button>
+              <div style="font-size:0.7rem;color:var(--gold);letter-spacing:0.05em">🐘 Lucky Charm</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Emerald Mini -->
+        <div class="product-card reveal" data-category="mini">
+          <div class="product-card-image">
+            <img src="assets/images/kaluki2.jpeg" alt="KALUKI Mini — Emerald Green" loading="lazy" style="object-position: 20% 70%;" />
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-meta">
+              <span class="product-card-name">The Mini</span>
+              <span class="product-card-price">£59</span>
+            </div>
+            <span class="product-card-sub">Emerald Green · Ribbed</span>
+            <div class="product-card-colours">
+              <div class="product-card-colour-dot c-emerald" title="Emerald"></div>
+              <div class="product-card-colour-dot c-royal-blue" title="Royal Blue"></div>
+              <div class="product-card-colour-dot c-black" title="Black"></div>
+            </div>
+            <div class="product-card-footer">
+              <button class="add-to-bag">Add to Bag</button>
+              <div style="font-size:0.7rem;color:var(--gold);letter-spacing:0.05em">🐘 Lucky Charm</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Royal Blue Mini -->
+        <div class="product-card reveal delay-1" data-category="mini">
+          <div class="product-card-image">
+            <img src="assets/images/kaluki2.jpeg" alt="KALUKI Mini — Royal Blue" loading="lazy" style="object-position: 40% 70%;" />
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-meta">
+              <span class="product-card-name">The Mini</span>
+              <span class="product-card-price">£59</span>
+            </div>
+            <span class="product-card-sub">Royal Blue · Fluffy</span>
+            <div class="product-card-colours">
+              <div class="product-card-colour-dot c-royal-blue" title="Royal Blue"></div>
+              <div class="product-card-colour-dot c-emerald" title="Emerald"></div>
+            </div>
+            <div class="product-card-footer">
+              <button class="add-to-bag">Add to Bag</button>
+              <div style="font-size:0.7rem;color:var(--gold);letter-spacing:0.05em">🐘 Lucky Charm</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leopard Mini -->
+        <div class="product-card reveal delay-2" data-category="mini">
+          <div class="product-card-image">
+            <img src="assets/images/kaluki3.jpeg" alt="KALUKI Mini — Leopard Print" loading="lazy" style="object-position: 60% 70%;" />
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-meta">
+              <span class="product-card-name">The Mini</span>
+              <span class="product-card-price">£59</span>
+            </div>
+            <span class="product-card-sub">Leopard Print · Fluffy</span>
+            <div class="product-card-colours">
+              <div class="product-card-colour-dot c-leopard" title="Leopard"></div>
+            </div>
+            <div class="product-card-footer">
+              <button class="add-to-bag">Add to Bag</button>
+              <div style="font-size:0.7rem;color:var(--gold);letter-spacing:0.05em">🐘 Lucky Charm</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Large — Cream & Gold -->
+        <div class="product-card reveal" data-category="large">
+          <div class="product-card-image">
+            <img src="assets/images/kaluki2.jpeg" alt="KALUKI Large — Cream & Gold" loading="lazy" style="object-position: 0% 10%;" />
+            <span class="product-card-badge">Popular</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-meta">
+              <span class="product-card-name">The Large</span>
+              <span class="product-card-price">£89</span>
+            </div>
+            <span class="product-card-sub">Cream &amp; Gold · Woven</span>
+            <div class="product-card-colours">
+              <div class="product-card-colour-dot c-cream-gold" title="Cream & Gold"></div>
+              <div class="product-card-colour-dot c-baby-pink" title="Baby Pink"></div>
+              <div class="product-card-colour-dot c-emerald" title="Emerald"></div>
+              <div class="product-card-colour-dot c-black" title="Black"></div>
+            </div>
+            <div class="product-card-footer">
+              <button class="add-to-bag">Add to Bag</button>
+              <div style="font-size:0.7rem;color:var(--gold);letter-spacing:0.05em">🐘 Lucky Charm</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Large — Black -->
+        <div class="product-card reveal delay-1" data-category="large">
+          <div class="product-card-image">
+            <img src="assets/images/kaluki3.jpeg" alt="KALUKI Large — Black" loading="lazy" style="object-position: 80% 70%;" />
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-meta">
+              <span class="product-card-name">The Large</span>
+              <span class="product-card-price">£89</span>
+            </div>
+            <span class="product-card-sub">Black · Ribbed</span>
+            <div class="product-card-colours">
+              <div class="product-card-colour-dot c-black" title="Black"></div>
+              <div class="product-card-colour-dot c-emerald" title="Emerald"></div>
+              <div class="product-card-colour-dot c-royal-blue" title="Royal Blue"></div>
+            </div>
+            <div class="product-card-footer">
+              <button class="add-to-bag">Add to Bag</button>
+              <div style="font-size:0.7rem;color:var(--gold);letter-spacing:0.05em">🐘 Lucky Charm</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <p class="eyebrow reveal" style="color:rgba(255,255,255,0.7);">Be First to Know</p>
+    <h2 class="reveal delay-1">New drops, straight to you.</h2>
+    <p class="reveal delay-2">We're just getting started. Join the list and never miss a new colourway.</p>
+    <form class="newsletter-form reveal delay-3" novalidate>
+      <input type="email" placeholder="Your email address" required aria-label="Email address" />
+      <button type="submit" class="btn btn-white">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-text">KALUKI</div>
+        <p>Little bags. Big personality.<br/>British fashion accessories.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <a href="shop.html">All Bags</a>
+        <a href="shop.html">The Mini — £59</a>
+        <a href="shop.html">The Large — £89</a>
+      </div>
+      <div class="footer-col">
+        <h5>About</h5>
+        <a href="about.html">Our Story</a>
+        <a href="about.html">The Lucky Elephant</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Help</h5>
+        <a href="contact.html">Get in Touch</a>
+        <a href="#">Delivery &amp; Returns</a>
+        <a href="#">Personalisation</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 KALUKI. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

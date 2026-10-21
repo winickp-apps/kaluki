@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — KALUKI</title>
+  <meta name="description" content="Get in touch with KALUKI — questions, personalisation requests, or just to say hello." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg class="nav-logo-mark" viewBox="0 0 48 48" fill="none">
+          <ellipse cx="24" cy="30" rx="14" ry="10" stroke="#C8A86B" stroke-width="1.5" fill="none"/>
+          <path d="M16 28 C14 22 15 14 22 12 C20 18 24 22 24 22" stroke="#C8A86B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <circle cx="31" cy="17" r="2.5" stroke="#C8A86B" stroke-width="1.2" fill="none"/>
+          <path d="M31 22 C34 18 38 18 38 22 C38 26 35 28 32 27" stroke="#C8A86B" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="nav-logo-text">KALUKI</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="index.html#collection">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" style="color:var(--gold)">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="shop.html" class="nav-bag" data-bag>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span>Bag</span>
+        </a>
+        <button class="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-mobile">
+    <button class="nav-mobile-close" aria-label="Close menu" style="position:absolute;top:2rem;right:2rem;font-size:1.5rem;color:var(--charcoal);">✕</button>
+    <a href="shop.html">Shop</a>
+    <a href="index.html#collection">Collection</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page-hero">
+    <p class="eyebrow">Say Hello</p>
+    <h1>Contact</h1>
+    <p>Questions, personalisation enquiries, press, or just want to say hello — we'd love to hear from you.</p>
+  </div>
+
+  <section class="section" style="background:var(--white)">
+    <div class="section-max">
+      <div class="contact-grid">
+
+        <!-- Contact info -->
+        <div class="reveal-left">
+          <p class="eyebrow">Get in Touch</p>
+          <h2 style="margin:1rem 0 1.5rem;">We're here.</h2>
+          <div class="gold-rule"></div>
+
+          <div style="display:flex;flex-direction:column;gap:2rem;margin-top:2rem;">
+            <div>
+              <p class="eyebrow" style="color:var(--charcoal);margin-bottom:0.5rem;">Email</p>
+              <a href="mailto:hello@kaluki.co.uk" style="color:var(--gold);font-size:0.9rem;letter-spacing:0.05em;">hello@kaluki.co.uk</a>
+            </div>
+            <div>
+              <p class="eyebrow" style="color:var(--charcoal);margin-bottom:0.5rem;">Response Time</p>
+              <p style="margin:0;">We aim to reply within 24–48 hours on weekdays.</p>
+            </div>
+            <div>
+              <p class="eyebrow" style="color:var(--charcoal);margin-bottom:0.5rem;">Personalisation</p>
+              <p style="margin:0;">Want a personalised disc engraving or a custom chain option? Tell us — we love making something special.</p>
+            </div>
+            <div>
+              <p class="eyebrow" style="color:var(--charcoal);margin-bottom:0.5rem;">Press &amp; Stockists</p>
+              <p style="margin:0;">For press enquiries or boutique stockist conversations, please reach out and we will get back to you personally.</p>
+            </div>
+          </div>
+
+          <div style="margin-top:3rem;">
+            <p class="eyebrow" style="color:var(--charcoal);margin-bottom:1rem;">Follow Us</p>
+            <div style="display:flex;gap:1.5rem;">
+              <a href="#" style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);transition:color 0.3s">Instagram</a>
+              <a href="#" style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);transition:color 0.3s">Pinterest</a>
+              <a href="#" style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);transition:color 0.3s">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="reveal-right">
+          <form id="contact-form" novalidate>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div class="form-field">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Jane" required />
+              </div>
+              <div class="form-field">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Please select…</option>
+                <option value="order">Order Enquiry</option>
+                <option value="personalisation">Personalisation Request</option>
+                <option value="press">Press</option>
+                <option value="stockist">Stockist Enquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you need…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark" style="width:100%;justify-content:center;">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-text">KALUKI</div>
+        <p>Little bags. Big personality.<br/>British fashion accessories.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <a href="shop.html">All Bags</a>
+        <a href="shop.html">The Mini — £59</a>
+        <a href="shop.html">The Large — £89</a>
+      </div>
+      <div class="footer-col">
+        <h5>About</h5>
+        <a href="about.html">Our Story</a>
+        <a href="about.html#elephant">The Lucky Elephant</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Help</h5>
+        <a href="contact.html">Get in Touch</a>
+        <a href="#">Delivery &amp; Returns</a>
+        <a href="#">Personalisation</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 KALUKI. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const toast = document.getElementById('toast');
+      toast.textContent = 'Message received — we\'ll be in touch soon.';
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3500);
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

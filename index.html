@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KALUKI — Little Bags. Big Personality.</title>
+  <meta name="description" content="KALUKI — British fashion accessories. Signature drawstring bags in two sizes. Gold hardware, lucky elephant charm. Good things go further." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ──────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg class="nav-logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="24" cy="30" rx="14" ry="10" stroke="#C8A86B" stroke-width="1.5" fill="none"/>
+          <path d="M16 28 C14 22 15 14 22 12 C20 18 24 22 24 22" stroke="#C8A86B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <circle cx="31" cy="17" r="2.5" stroke="#C8A86B" stroke-width="1.2" fill="none"/>
+          <path d="M31 22 C34 18 38 18 38 22 C38 26 35 28 32 27" stroke="#C8A86B" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M24 22 C26 24 28 26 28 30" stroke="#C8A86B" stroke-width="1" fill="none"/>
+        </svg>
+        <span class="nav-logo-text">KALUKI</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="index.html#collection">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="shop.html" class="nav-bag" data-bag>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span>Bag</span>
+        </a>
+        <button class="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Mobile Nav ───────────────────────────────────────────── -->
+  <div class="nav-mobile">
+    <button class="nav-mobile-close" aria-label="Close menu" style="position:absolute;top:2rem;right:2rem;font-size:1.5rem;color:var(--charcoal);">✕</button>
+    <a href="shop.html">Shop</a>
+    <a href="index.html#collection">Collection</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ── Hero ─────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow hero-tagline reveal">Good Things Go Further</p>
+      <h1 class="hero-title reveal delay-1">KALUKI</h1>
+      <p class="hero-sub reveal delay-2">Little bags. Big personality.</p>
+      <p class="hero-price-hint reveal delay-3">From <span>£59</span> &nbsp;·&nbsp; Mini &amp; Large</p>
+      <div class="hero-cta reveal delay-4">
+        <a href="shop.html" class="btn btn-dark">
+          Shop the Collection
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="index.html#story" class="btn btn-outline">Our Story</a>
+      </div>
+    </div>
+
+    <div class="hero-image reveal-right">
+      <img src="assets/images/kaluki1.jpeg" alt="KALUKI signature bag — cream woven with gold hardware" loading="eager" />
+    </div>
+  </section>
+
+  <!-- ── Marquee ──────────────────────────────────────────────── -->
+  <div class="marquee-bar" aria-hidden="true">
+    <div class="marquee-track">
+      <span>The Lucky Elephant Collection</span>
+      <span class="dot">◆</span>
+      <span>Handcrafted Gold Hardware</span>
+      <span class="dot">◆</span>
+      <span>Mini £59 &nbsp;·&nbsp; Large £89</span>
+      <span class="dot">◆</span>
+      <span>Good Things Go Further</span>
+      <span class="dot">◆</span>
+      <span>British Fashion Accessories</span>
+      <span class="dot">◆</span>
+      <span>Ibiza Vibes &nbsp;·&nbsp; Mykonos Nights</span>
+      <span class="dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ── The Range — full image ────────────────────────────────── -->
+  <div class="fullbleed" id="collection" style="max-height:80vh;">
+    <img src="assets/images/kaluki2.jpeg" alt="KALUKI bag collection — all colourways" loading="lazy" style="height:100%;object-fit:cover;object-position:top center;" />
+    <div class="fullbleed-overlay">
+      <p class="eyebrow">New Season</p>
+      <h2 class="reveal">One bag.<br/>Endless expressions.</h2>
+      <p class="reveal delay-1">Eight colourways. Two sizes. Infinite personalities. The signature KALUKI drawstring bag, reimagined season after season.</p>
+      <a href="shop.html" class="btn btn-white reveal delay-2">
+        See All Styles
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ── Two Sizes ─────────────────────────────────────────────── -->
+  <section class="section" style="padding-left:0;padding-right:0;padding-top:0;">
+    <div class="bags-grid">
+      <div class="bag-card reveal-left">
+        <span class="bag-card-number">01</span>
+        <p class="eyebrow">Compact &amp; Chic</p>
+        <h3>The Mini</h3>
+        <div class="gold-rule"></div>
+        <ul class="bag-features">
+          <li>Signature drawstring with tassel &amp; elephant charm</li>
+          <li>Gold chain crossbody strap</li>
+          <li>Structured enough to stand on its own</li>
+          <li>Fits phone, cards, keys, lip colour</li>
+          <li>Available in 8 fabric &amp; texture options</li>
+        </ul>
+        <div class="bag-price">£59</div>
+        <a href="shop.html" class="btn btn-dark" style="margin-top:0.5rem;">
+          Shop Mini
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <div class="bag-card reveal-right">
+        <span class="bag-card-number">02</span>
+        <p class="eyebrow">More Room, Same Spirit</p>
+        <h3>The Large</h3>
+        <div class="gold-rule"></div>
+        <ul class="bag-features">
+          <li>Everything the Mini does, scaled up</li>
+          <li>Comfortable day-to-evening carry</li>
+          <li>Extended chain &amp; leather strap options</li>
+          <li>Fits more — clutch essentials plus extras</li>
+          <li>Same 8 colourways as the Mini</li>
+        </ul>
+        <div class="bag-price">£89</div>
+        <a href="shop.html" class="btn btn-dark" style="margin-top:0.5rem;">
+          Shop Large
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Colourways ───────────────────────────────────────────── -->
+  <section class="section colourways-section">
+    <div class="section-max">
+      <div class="colourways-intro">
+        <div class="reveal-left">
+          <p class="eyebrow">The Palette</p>
+          <h2>Find yours.</h2>
+        </div>
+        <p class="reveal-right" style="align-self:end;">From effortless cream to jewel-bright royal blue — every colourway is chosen to carry your mood, your moment, and your style.</p>
+      </div>
+
+      <div class="colourways-grid">
+        <div class="colour-swatch reveal delay-1">
+          <div class="colour-dot c-cream-gold"></div>
+          <span class="colour-name">Cream &amp; Gold</span>
+        </div>
+        <div class="colour-swatch reveal delay-2">
+          <div class="colour-dot c-baby-pink"></div>
+          <span class="colour-name">Baby Pink</span>
+        </div>
+        <div class="colour-swatch reveal delay-3">
+          <div class="colour-dot c-baby-blue"></div>
+          <span class="colour-name">Baby Blue</span>
+        </div>
+        <div class="colour-swatch reveal delay-1">
+          <div class="colour-dot c-emerald"></div>
+          <span class="colour-name">Emerald</span>
+        </div>
+        <div class="colour-swatch reveal delay-2">
+          <div class="colour-dot c-royal-blue"></div>
+          <span class="colour-name">Royal Blue</span>
+        </div>
+        <div class="colour-swatch reveal delay-3">
+          <div class="colour-dot c-leopard"></div>
+          <span class="colour-name">Leopard</span>
+        </div>
+        <div class="colour-swatch reveal delay-1">
+          <div class="colour-dot c-black"></div>
+          <span class="colour-name">Black</span>
+        </div>
+        <div class="colour-swatch reveal delay-2">
+          <div class="colour-dot c-cream-fluffy"></div>
+          <span class="colour-name">Cream Fluffy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Craft ─────────────────────────────────────────────────── -->
+  <section class="section craft-section">
+    <div class="section-max">
+      <div class="section-header centered" style="color:var(--cream)">
+        <p class="eyebrow reveal">The Details</p>
+        <h2 style="color:var(--cream)" class="reveal delay-1">Crafted to carry<br/>your story.</h2>
+        <div class="gold-rule reveal delay-2" style="margin:1.25rem auto;"></div>
+      </div>
+
+      <div class="craft-grid">
+        <div class="craft-item reveal delay-1">
+          <svg class="craft-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+            <ellipse cx="20" cy="26" rx="12" ry="8" />
+            <path d="M12 24 C10 18 11 10 18 8 C16 14 20 18 20 18"/>
+            <circle cx="28" cy="13" r="3"/>
+            <path d="M28 19 C31 15 35 15 35 19 C35 23 32 25 29 24"/>
+          </svg>
+          <p class="eyebrow">Lucky Charm</p>
+          <h3>The Elephant</h3>
+          <div class="gold-rule"></div>
+          <p>Our signature lucky elephant is cast in polished gold-finish metal and hangs from the drawstring tassel on every KALUKI bag. Good things go further.</p>
+        </div>
+
+        <div class="craft-item reveal delay-2">
+          <svg class="craft-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="8" cy="20" r="4"/>
+            <circle cx="20" cy="20" r="4"/>
+            <circle cx="32" cy="20" r="4"/>
+            <path d="M12 20 h4 M24 20 h4"/>
+          </svg>
+          <p class="eyebrow">Five Options</p>
+          <h3>Premium Chain</h3>
+          <div class="gold-rule"></div>
+          <p>Choose from five polished gold chain styles — Signature Link, Modern Curb, Bar Link, Leather &amp; Chain Mix, or Twist Link. Every one a statement in its own right.</p>
+        </div>
+
+        <div class="craft-item reveal delay-3">
+          <svg class="craft-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+            <rect x="6" y="10" width="28" height="20" rx="2"/>
+            <path d="M14 20 h12 M20 14 v12"/>
+          </svg>
+          <p class="eyebrow">Every Bag</p>
+          <h3>Signature Interior</h3>
+          <div class="gold-rule"></div>
+          <p>A hand-embossed gold KALUKI label is sewn into the lining of every bag. The back can be personalised with one of five engraved disc designs — your bag, your mark.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Lucky Elephant Collection full image ──────────────────── -->
+  <div class="fullbleed">
+    <img src="assets/images/kaluki4.jpeg" alt="Lucky Elephant Collection — KALUKI" loading="lazy" />
+    <div class="fullbleed-overlay" style="background: linear-gradient(135deg, rgba(30,26,22,0.6) 0%, transparent 70%);">
+      <p class="eyebrow reveal">Introducing</p>
+      <h2 class="reveal delay-1" style="color:var(--cream);">The Lucky<br/>Elephant<br/>Collection</h2>
+      <p class="reveal delay-2">Our latest edit. Three hero colourways, double-tassel detailing and a little extra magic on the back disc.</p>
+      <a href="shop.html" class="btn btn-white reveal delay-3">
+        Explore Collection
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ── Chain detail strip ────────────────────────────────────── -->
+  <div class="fullbleed">
+    <img src="assets/images/kaluki3.jpeg" alt="KALUKI chain and hardware detail" loading="lazy" />
+    <div class="fullbleed-overlay" style="background: linear-gradient(to left, rgba(30,26,22,0.65) 0%, transparent 60%); align-items: flex-end; justify-content: flex-end; text-align: right;">
+      <p class="eyebrow reveal">The Finish</p>
+      <h2 class="reveal delay-1" style="color:var(--cream);">Gold runs<br/>through everything.</h2>
+      <p class="reveal delay-2">Five chain options. Five disc engravings. One signature elephant. The hardware is the hallmark.</p>
+    </div>
+  </div>
+
+  <!-- ── Lifestyle Editorial ───────────────────────────────────── -->
+  <section class="section" style="padding:0;">
+    <div class="lifestyle-grid">
+      <div class="lifestyle-card">
+        <img src="assets/images/kaluki2.jpeg" alt="Ibiza Vibes — KALUKI" loading="lazy" style="object-position: 0% 80%;" />
+        <div class="lifestyle-card-overlay">
+          <p class="eyebrow">Mood</p>
+          <h3>Ibiza Vibes</h3>
+          <span class="lifestyle-card-cta">Shop the look</span>
+        </div>
+      </div>
+      <div class="lifestyle-card">
+        <img src="assets/images/kaluki1.jpeg" alt="Mykonos Nights — KALUKI" loading="lazy" style="object-position: 50% 60%;" />
+        <div class="lifestyle-card-overlay">
+          <p class="eyebrow">Mood</p>
+          <h3>Mykonos Nights</h3>
+          <span class="lifestyle-card-cta">Shop the look</span>
+        </div>
+      </div>
+      <div class="lifestyle-card">
+        <img src="assets/images/kaluki4.jpeg" alt="Everyday Luxury — KALUKI" loading="lazy" style="object-position: 50% 50%;" />
+        <div class="lifestyle-card-overlay">
+          <p class="eyebrow">Mood</p>
+          <h3>Everyday Luxury</h3>
+          <span class="lifestyle-card-cta">Shop the look</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Brand Story ───────────────────────────────────────────── -->
+  <section class="story-section" id="story">
+    <div class="story-image reveal-left">
+      <img src="assets/images/kaluki4.jpeg" alt="KALUKI brand story" loading="lazy" style="object-position: center 30%;" />
+    </div>
+    <div class="story-content">
+      <p class="eyebrow reveal">The Story</p>
+      <h2 class="reveal delay-1">Born from a love<br/>of beautiful things.</h2>
+      <div class="gold-rule reveal delay-2"></div>
+      <p class="reveal delay-2">KALUKI was built around a simple belief: that a small bag can hold a lot of personality. One signature silhouette, two sizes, beautiful fabrics and gold hardware that tells the world you mean it.</p>
+      <p class="reveal delay-3" style="margin-top:-0.5rem;">The lucky elephant has always been our symbol — a reminder that good things go to those who carry something worth carrying.</p>
+      <a href="about.html" class="btn btn-white reveal delay-4" style="margin-top:0.5rem;">
+        Read Our Story
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Newsletter ────────────────────────────────────────────── -->
+  <section class="newsletter-section">
+    <p class="eyebrow reveal" style="color:rgba(255,255,255,0.7);">Be First to Know</p>
+    <h2 class="reveal delay-1">Join the KALUKI list.</h2>
+    <p class="reveal delay-2">New colourways, exclusive launches and a little good luck — delivered to your inbox.</p>
+    <form class="newsletter-form reveal delay-3" novalidate>
+      <input type="email" placeholder="Your email address" required aria-label="Email address" />
+      <button type="submit" class="btn btn-white">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-text">KALUKI</div>
+        <p>Little bags. Big personality.<br/>British fashion accessories, built around one beautiful signature bag.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <a href="shop.html">All Bags</a>
+        <a href="shop.html#mini">The Mini — £59</a>
+        <a href="shop.html#large">The Large — £89</a>
+        <a href="shop.html#collections">Lucky Elephant Collection</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>About</h5>
+        <a href="about.html">Our Story</a>
+        <a href="about.html#elephant">The Lucky Elephant</a>
+        <a href="about.html#craft">Craftsmanship</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Help</h5>
+        <a href="contact.html">Get in Touch</a>
+        <a href="#">Delivery &amp; Returns</a>
+        <a href="#">Personalisation</a>
+        <a href="#">Stockists</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 KALUKI. All rights reserved. Designed and imagined in Britain.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Toast ─────────────────────────────────────────────────── -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
