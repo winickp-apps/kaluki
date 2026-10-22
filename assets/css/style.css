@@ -901,7 +901,40 @@ p {
 
 .footer-social a:hover { color: var(--gold); }
 
-/* 18. Scroll Animations
+/* 18. Kaluki — Walk-in Animation
+─────────────────────────────────────────────── */
+
+/*
+  Sequence (2.75s total, plays once):
+  0.00–1.95s  Kaluki walks in from the left with a gentle waddle
+  1.95–2.75s  Trunk lifts via SMIL animateTransform (see SVG)
+  After 2.75s Stays still — trunk up, settled beside the logo
+*/
+
+.kaluki-elephant {
+  display: block;
+  overflow: visible;
+  transform-origin: center bottom;
+  animation: kaluki-enter 2.5s ease-out forwards;
+}
+
+@keyframes kaluki-enter {
+  /* Walk in — 4 waddling steps */
+  0%   { transform: translateX(-54px);                      opacity: 0; }
+  6%   { transform: translateX(-48px) translateY(0);        opacity: 1; }
+  18%  { transform: translateX(-36px) translateY(-3px);               }
+  28%  { transform: translateX(-24px) translateY(0);                   }
+  38%  { transform: translateX(-14px) translateY(-2.5px);              }
+  48%  { transform: translateX(-6px)  translateY(0);                   }
+  57%  { transform: translateX(-1px)  translateY(-1.5px);              }
+  66%  { transform: translateX(0)     translateY(0);                   }
+  /* Settle — gentle plop into place */
+  74%  { transform: translateX(0)     translateY(3px) scaleY(0.93);   }
+  84%  { transform: translateX(0)     translateY(-1px);                }
+  100% { transform: translateX(0)     translateY(0);                   }
+}
+
+/* 18b. Scroll Animations
 ─────────────────────────────────────────────── */
 .reveal {
   opacity: 0;
