@@ -352,11 +352,7 @@ p {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  transform: scale(1.03);
-  transition: transform 8s ease;
 }
-
-.hero-image:hover img { transform: scale(1.0); }
 
 .hero-scroll {
   position: absolute;
