@@ -940,6 +940,15 @@ p {
   100% { transform: rotate(-120deg); }
 }
 
+@keyframes kaluki-hero-enter-mobile {
+  0%   { transform: translateX(-110vw); opacity: 0; }
+  3%   { opacity: 1; }
+  72%  { transform: translateX(0) translateY(0); }
+  82%  { transform: translateX(0) translateY(10px) scaleY(0.9); }
+  91%  { transform: translateX(0) translateY(-3px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
 @keyframes kaluki-hero-enter {
   0%   { transform: translateX(-120vw);                        opacity: 0; }
   2%   { opacity: 1; }
@@ -1265,20 +1274,14 @@ p {
   .kaluki-hero {
     width: 200px;
     height: auto;
-    animation: none;
+    animation: kaluki-hero-enter-mobile 4s ease-out forwards;
   }
 
-  /* No walking on mobile — elephant stands still */
-  .kaluki-hero .kleg,
-  .kaluki-hero .kleg-sw,
-  .kaluki-hero .kbody,
-  .kaluki-hero .ktail {
-    animation: none;
-  }
-
-  /* Trunk raises shortly after page loads instead of after walk-in */
+  /* Trunk raises after the mobile walk-in finishes */
   .kaluki-hero .ktrunk {
-    animation: kaluki-trunk-raise 1.2s cubic-bezier(0.42, 0, 0.58, 1) 0.8s forwards;
+    animation:
+      kaluki-trunk-sway 2.4s ease-in-out 1,
+      kaluki-trunk-raise 1.2s cubic-bezier(0.42, 0, 0.58, 1) 4.5s forwards;
   }
 }
 
