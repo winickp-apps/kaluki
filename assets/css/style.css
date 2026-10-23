@@ -347,11 +347,21 @@ p {
   background: var(--cream-dark);
 }
 
+.hero-image::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 380px;
+  background: linear-gradient(to right, var(--cream) 75%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .hero-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: right center;
 }
 
 .hero-scroll {
