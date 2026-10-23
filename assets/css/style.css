@@ -925,8 +925,8 @@ p {
   transform-box: view-box;
   transform-origin: 220px 195px;
   animation:
-    kaluki-hero-enter 9.0s ease-out forwards,
-    kaluki-sit-down 1.8s cubic-bezier(0.25, 0, 0.2, 1) 9.5s forwards;
+    kaluki-hero-enter 12.0s ease-out forwards,
+    kaluki-sit-down 2.5s cubic-bezier(0.25, 0, 0.2, 1) 12.5s forwards;
 }
 
 /* Trunk: gentle sway during walk-in, then raise after sitting */
@@ -935,7 +935,7 @@ p {
   transform-origin: 20% 0%;
   animation:
     kaluki-trunk-sway 2.4s ease-in-out 1,
-    kaluki-trunk-raise 1.2s cubic-bezier(0.42, 0, 0.58, 1) 11.5s forwards;
+    kaluki-trunk-raise 1.2s cubic-bezier(0.42, 0, 0.58, 1) 15.3s forwards;
 }
 
 /* Back legs: stomp walk + fold into sitting pose */
@@ -943,19 +943,19 @@ p {
   transform-box: fill-box;
   transform-origin: center top;
   animation:
-    klift 1.6s ease-in-out 5,
-    kaluki-leg-fold 1.8s cubic-bezier(0.25, 0, 0.2, 1) 9.5s forwards;
+    klift 1.6s ease-in-out 7,
+    kaluki-leg-fold 2.5s cubic-bezier(0.25, 0, 0.2, 1) 12.5s forwards;
 }
 .kaluki-hero .kleg-a.kleg-back {
   animation:
-    klift 1.6s ease-in-out -0.8s 5,
-    kaluki-leg-fold 1.8s cubic-bezier(0.25, 0, 0.2, 1) 9.5s forwards;
+    klift 1.6s ease-in-out -0.8s 7,
+    kaluki-leg-fold 2.5s cubic-bezier(0.25, 0, 0.2, 1) 12.5s forwards;
 }
 .kaluki-hero .kleg-back .kleg-sw {
-  animation: kswing 1.6s ease-in-out 5;
+  animation: kswing 1.6s ease-in-out 7;
 }
 .kaluki-hero .kleg-a.kleg-back .kleg-sw {
-  animation: kswing 1.6s ease-in-out -0.8s 5;
+  animation: kswing 1.6s ease-in-out -0.8s 7;
 }
 
 @keyframes kaluki-trunk-sway {
@@ -1008,9 +1008,11 @@ p {
 }
 
 @keyframes kaluki-sit-down {
-  0%   { transform: rotate(0deg)  translateY(0);    }
-  40%  { transform: rotate(-3deg) translateY(4px);  }
-  100% { transform: rotate(-8deg) translateY(10px); }
+  0%   { transform: rotate(0deg)   translateY(0);    }
+  20%  { transform: rotate(-5deg)  translateY(5px);  }
+  70%  { transform: rotate(-16deg) translateY(18px); }
+  85%  { transform: rotate(-14deg) translateY(16px); }
+  100% { transform: rotate(-15deg) translateY(17px); }
 }
 
 @keyframes kaluki-leg-fold {
@@ -1328,27 +1330,27 @@ p {
     width: 200px;
     height: auto;
     animation:
-      kaluki-hero-enter-mobile 4s ease-out forwards,
-      kaluki-sit-down 1.8s cubic-bezier(0.25, 0, 0.2, 1) 4.5s forwards;
+      kaluki-hero-enter-mobile 5s ease-out forwards,
+      kaluki-sit-down 2.5s cubic-bezier(0.25, 0, 0.2, 1) 5.5s forwards;
   }
 
   /* Trunk raises after sitting */
   .kaluki-hero .ktrunk {
     animation:
       kaluki-trunk-sway 2.4s ease-in-out 1,
-      kaluki-trunk-raise 1.2s cubic-bezier(0.42, 0, 0.58, 1) 6.5s forwards;
+      kaluki-trunk-raise 1.2s cubic-bezier(0.42, 0, 0.58, 1) 8.2s forwards;
   }
 
   /* Back legs fold when sitting (mobile) */
   .kaluki-hero .kleg-back {
     animation:
-      klift 1.6s ease-in-out 5,
-      kaluki-leg-fold 1.8s cubic-bezier(0.25, 0, 0.2, 1) 4.5s forwards;
+      klift 1.6s ease-in-out 7,
+      kaluki-leg-fold 2.5s cubic-bezier(0.25, 0, 0.2, 1) 5.5s forwards;
   }
   .kaluki-hero .kleg-a.kleg-back {
     animation:
-      klift 1.6s ease-in-out -0.8s 5,
-      kaluki-leg-fold 1.8s cubic-bezier(0.25, 0, 0.2, 1) 4.5s forwards;
+      klift 1.6s ease-in-out -0.8s 7,
+      kaluki-leg-fold 2.5s cubic-bezier(0.25, 0, 0.2, 1) 5.5s forwards;
   }
 }
 
