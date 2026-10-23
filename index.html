@@ -100,22 +100,22 @@
       <div class="kaluki-hero-wrap">
         <svg class="kaluki-hero" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" width="320" height="235" aria-hidden="true" style="overflow:visible">
           <style>
-            .kleg{transform-box:fill-box;transform-origin:center bottom;animation:klift 1.2s ease-in-out 5}
-            .kleg-sw{transform-box:fill-box;transform-origin:center top;animation:kswing 1.2s ease-in-out 5}
-            .kleg-a,.kleg-a .kleg-sw{animation-delay:-0.6s}
-            .kbody{animation:kbob 0.6s ease-in-out 10}
-            .ktail{transform-box:fill-box;transform-origin:100% 0%;animation:kflick 1.2s ease-in-out 5}
-            @keyframes kswing{0%,100%{transform:rotate(13deg)}50%{transform:rotate(-13deg)}}
-            @keyframes klift{0%,50%,100%{transform:translateY(0)}25%{transform:translateY(-6px)}}
-            @keyframes kbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-            @keyframes kflick{0%,100%{transform:rotate(0deg)}40%{transform:rotate(12deg)}60%{transform:rotate(-4deg)}}
+            .kleg{transform-box:fill-box;transform-origin:center bottom;animation:klift 1.6s ease-in-out 5}
+            .kleg-sw{transform-box:fill-box;transform-origin:center top;animation:kswing 1.6s ease-in-out 5}
+            .kleg-a,.kleg-a .kleg-sw{animation-delay:-0.8s}
+            .kbody{animation:kbob 0.8s ease-in-out 10}
+            .ktail{transform-box:fill-box;transform-origin:100% 0%;animation:kflick 1.6s ease-in-out 5}
+            @keyframes kswing{0%,100%{transform:rotate(16deg)}50%{transform:rotate(-16deg)}}
+            @keyframes klift{0%,40%,100%{transform:translateY(0)}18%{transform:translateY(-14px)}36%{transform:translateY(3px)}}
+            @keyframes kbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+            @keyframes kflick{0%,100%{transform:rotate(0deg)}40%{transform:rotate(14deg)}60%{transform:rotate(-5deg)}}
           </style>
 
           <!-- Ground shadow -->
           <ellipse cx="155" cy="212" rx="112" ry="4.5" fill="rgba(0,0,0,0.07)"/>
 
           <!-- Far legs — drawn before body so body covers their tops -->
-          <g class="kleg kleg-a"><g class="kleg-sw"><rect x="100" y="122" width="26" height="72" rx="11" fill="#B8975A"/><ellipse cx="113" cy="192" rx="11" ry="3.5" fill="#A07828"/></g></g>
+          <g class="kleg kleg-a kleg-back"><g class="kleg-sw"><rect x="100" y="122" width="26" height="72" rx="11" fill="#B8975A"/><ellipse cx="113" cy="192" rx="11" ry="3.5" fill="#A07828"/></g></g>
           <g class="kleg"><g class="kleg-sw"><rect x="203" y="122" width="26" height="72" rx="11" fill="#B8975A"/><ellipse cx="216" cy="192" rx="11" ry="3.5" fill="#A07828"/></g></g>
 
           <!-- Body (bobs up/down while walking) -->
@@ -151,7 +151,7 @@
           </g>
 
           <!-- Near legs — drawn after body so they appear in front -->
-          <g class="kleg"><g class="kleg-sw"><rect x="74" y="122" width="28" height="74" rx="12" fill="#C8A86B"/><ellipse cx="88" cy="194" rx="12" ry="3.5" fill="#A07828"/></g></g>
+          <g class="kleg kleg-back"><g class="kleg-sw"><rect x="74" y="122" width="28" height="74" rx="12" fill="#C8A86B"/><ellipse cx="88" cy="194" rx="12" ry="3.5" fill="#A07828"/></g></g>
           <g class="kleg kleg-a"><g class="kleg-sw"><rect x="178" y="122" width="28" height="74" rx="12" fill="#C8A86B"/><ellipse cx="192" cy="194" rx="12" ry="3.5" fill="#A07828"/></g></g>
         </svg>
       </div>
