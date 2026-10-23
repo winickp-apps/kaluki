@@ -1252,6 +1252,34 @@ p {
   .values-grid { grid-template-columns: 1fr 1fr; }
   .bags-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
+
+  /* Elephant: remove absolute positioning, sit below buttons */
+  .kaluki-hero-wrap {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .kaluki-hero {
+    width: 200px;
+    height: auto;
+    animation: none;
+  }
+
+  /* No walking on mobile — elephant stands still */
+  .kaluki-hero .kleg,
+  .kaluki-hero .kleg-sw,
+  .kaluki-hero .kbody,
+  .kaluki-hero .ktail {
+    animation: none;
+  }
+
+  /* Trunk raises shortly after page loads instead of after walk-in */
+  .kaluki-hero .ktrunk {
+    animation: kaluki-trunk-raise 1.2s cubic-bezier(0.42, 0, 0.58, 1) 0.8s forwards;
+  }
 }
 
 @media (max-width: 768px) {
